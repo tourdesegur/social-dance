@@ -34,6 +34,14 @@ a {
   text-decoration: none;
 }
 
+ul .active {
+  color: var(--accent-color-pink);
+}
+
+p {
+  font-size: 18px;
+}
+
 .container-fluid {
     padding: 0;
 }
@@ -42,3 +50,80 @@ a {
   width: 450px;
 }
 
+
+/* Flipping cards CSS */
+
+.container-flip-cards {
+  width: 80%;
+  margin: 70px auto;
+padding: 8px;
+display: grid;
+grid-gap: 8px;
+grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+grid-auto-rows: 180px;
+grid-auto-flow: dense;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  perspective: 1000px;
+}
+
+.picture {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 0.5s;
+}
+
+.picture .front {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  backface-visibility: hidden;
+}
+
+.picture .front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.horizontal {
+  grid-column: span 2;
+}
+
+.vertical {
+  grid-row: span 2;
+}
+
+.picture .back {
+  width: 100%;
+  height: 100%;
+  background-color: var(--accent-color-blue);
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  transform: rotateY(180deg);
+}
+
+.container .content:hover .picture {
+  transform: rotateY(180deg);
+}
+
+@media screen and (max-width:950px) {
+  .container-flip-cards {
+    width: 100%;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-auto-rows: 180px;
+  }
+
+  .content {
+    grid-row: unset;
+    grid-column: unset;
+  }
+}

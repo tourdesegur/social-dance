@@ -23,24 +23,113 @@
                     <h1>Social Dancing</h1> 
                 </div>
                 </div>
-                <a type="button" href="#tabs">OPEN</a>
+                <a type="button" href="#myTab">OPEN</a>
             </div>
         </header>
         <main>
-            <ul class="nav nav-tabs" id="tabs">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Active</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled">Disabled</a>
-                </li>
-              </ul>
+          <div class="container">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="about-tab" data-bs-toggle="tab" data-bs-target="#about-tab-pane" type="button" role="tab" aria-controls="about-tab-pane" aria-selected="true">About</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="styles-tab" data-bs-toggle="tab" data-bs-target="#styles-tab-pane" type="button" role="tab" aria-controls="styles-tab-pane" aria-selected="false">Styles</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="schools-tab" data-bs-toggle="tab" data-bs-target="#schools-tab-pane" type="button" role="tab" aria-controls="schools-tab-pane" aria-selected="false">Schools</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="gallery-tab" data-bs-toggle="tab" data-bs-target="#gallery-tab-pane" type="button" role="tab" aria-controls="gallery-tab-pane" aria-selected="false" gallery>Gallery</button>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="about-tab-pane" role="tabpanel" aria-labelledby="about-tab" tabindex="0">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-6">
+                      <img src="media/bachata.jpg" alt="/" height="700" />
+                    </div>
+                    <div class="col-6">
+                      <p>Social dance is dance which is recreational and usually performed with a partner and in groups or as a community activity for fun and enjoyment. Sometimes it does   require a partner but simply a number of people in a group.</p>
+                      <p>In contemporary times it may also be the activity of a specialist dance club in providing a particular form of social dance where people may meet and engage regularly with a change of partners from dance to dance. A bit of a chat as part of this interchange is of paramount importance on the social side.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="styles-tab-pane" role="tabpanel" aria-labelledby="styles-tab" tabindex="0">
+                <div class="container container-flip-cards">
+                  <div class="content">
+                    <div class="picture">
+                      <div class="front">
+                        <img src="media/bachata.jpg" alt="bachata" />
+                      </div>
+                      <div class="back">
+                        <p>Dance description</p>
+                        <a href="http://youtube.com">Watch</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content vertical">
+                    <div class="picture">
+                      <div class="front">
+                        <img src="media/salsa.jpg" alt="salsa" />
+                      </div>
+                      <div class="back">
+                        <p>Dance description</p>
+                        <a href="http://youtube.com">Watch</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content">
+                    <div class="picture">
+                      <div class="front">
+                        <img src="media/kizomba.jpg" alt="kizomba" />
+                      </div>
+                      <div class="back">
+                        <p>Dance description</p>
+                        <a href="http://youtube.com">Watch</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content horizontal">
+                    <div class="picture">
+                      <div class="front">
+                        <img src="media/swing2.jpg" alt="swing" />
+                      </div>
+                      <div class="back">
+                        <p>Dance description</p>
+                        <a href="http://youtube.com">Watch</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content">
+                    <div class="picture">
+                      <div class="front">
+                        <img src="media/semba.jpg" alt="semba" />
+                      </div>
+                      <div class="back">
+                        <p>Dance description</p>
+                        <a href="http://youtube.com">Watch</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content vertical">
+                    <div class="picture">
+                      <div class="front">
+                        <img src="media/zouk.jpg" alt="zouk" />
+                      </div>
+                      <div class="back">
+                        <p>Dance description</p>
+                        <a href="http://youtube.com">Watch</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="schools-tab-pane" role="tabpanel" aria-labelledby="schools-tab" tabindex="0">...</div>
+              <div class="tab-pane fade" id="gallery-tab-pane" role="tabpanel" aria-labelledby="gallery-tab" tabindex="0">...</div>
+            </div>
+            </div>
         </main>
     </div>
 </body>
