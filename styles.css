@@ -1,0 +1,44 @@
+:root {
+  --default-font-family:  'Lato', sans-serif;
+  --secondary-font: 'Dancing Script', cursive;
+  --accent-color-pink: #FF24BD;
+  --accent-color-blue: #0D99FF;
+  --default-text-color: #011627;
+}
+
+body {
+  color: var(--default-text-color);
+  font-family: var(--default-font-family);
+}
+
+h1 {
+  color: var(--accent-color-pink);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 12px;
+}
+
+h2 {
+  font-family: var(--secondary-font);
+  font-size: 24px;
+  line-height: 36px;
+}
+
+a {
+  background-color: var(--accent-color-blue);
+  color: white;
+  border-radius: 0;
+  padding: 5px 50px;
+  font-size: 24px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.title-container {
+  width: 450px;
+}
+
