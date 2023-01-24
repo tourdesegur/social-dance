@@ -34,12 +34,17 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  background-color: white;
+  color: var(--default-text-color);
+}
+
 ul .active {
   color: var(--accent-color-pink);
 }
 
 p {
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .container-fluid {
@@ -109,6 +114,21 @@ grid-auto-flow: dense;
   align-items:center;
   justify-content: center;
   transform: rotateY(180deg);
+}
+
+.picture .back .flip-link {
+  background-color: black;
+}
+
+.picture .back .flip-link:hover {
+  background-color: white;
+  color: var(--default-text-color);
+}
+
+.picture .back .p-flips {
+  font-size: 14px;
+  margin: 0 20px;
+  color: white;
 }
 
 .container .content:hover .picture {
