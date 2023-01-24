@@ -24,7 +24,7 @@ h2 {
   line-height: 36px;
 }
 
-a {
+.btn-design {
   background-color: var(--accent-color-blue);
   color: white;
   border-radius: 0;
@@ -34,7 +34,7 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+.btn-design:hover {
   background-color: white;
   color: var(--default-text-color);
 }
@@ -43,8 +43,8 @@ ul .active {
   color: var(--accent-color-pink);
 }
 
-p {
-  font-size: 14px;
+.p-about {
+  font-size: 18px;
 }
 
 .container-fluid {
@@ -55,6 +55,28 @@ p {
   width: 450px;
 }
 
+.nav-tabs {
+  margin: 100px 0 30px 0;
+}
+
+.nav-link {
+  padding: 10px 60px;
+  color: var(--default-text-color);
+  font-size: 24px;
+}
+
+.nav-link:hover {
+  color: var(--accent-color-blue);
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  color: var(--accent-color-pink);
+}
+
+.container-about, .container-schools {
+  width: 80%;
+  margin: 70px auto;
+}
 
 /* Flipping cards CSS */
 
@@ -118,6 +140,12 @@ grid-auto-flow: dense;
 
 .picture .back .flip-link {
   background-color: black;
+  color: white;
+  border-radius: 0;
+  padding: 5px 50px;
+  font-size: 24px;
+  font-weight: 400;
+  text-decoration: none;
 }
 
 .picture .back .flip-link:hover {
