@@ -82,6 +82,8 @@ ul .active {
 
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
   color: var(--accent-color-pink);
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 
 .container-about, .container-schools {
@@ -199,4 +201,43 @@ grid-auto-flow: dense;
     grid-row: unset;
     grid-column: unset;
   }
+}
+
+/* Cards CSS */
+
+.card, .card img {
+  border-radius: 0;
+}
+
+.card-body a {
+  background-color: var(--accent-color-blue);
+  border-color: var(--accent-color-blue);
+  border-radius: 0;
+}
+
+.card-body a:hover {
+  background-color: white;
+  color: var(--default-text-color);
+  border-color: var(--default-text-color);
+}
+
+/* Footer */
+
+.container-footer {
+  text-align: center;
+  margin: 90px 0 40px 0;
+}
+
+.container-footer p {
+  font-size: 14px;
+  line-height: 0px;
+}
+
+.container-footer a {
+  text-decoration: none;
+  color: var(--accent-color-blue);
+}
+
+.container-footer a:hover {
+  color: var(--default-text-color);
 }
