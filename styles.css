@@ -14,13 +14,13 @@ body {
 h1 {
   color: var(--accent-color-pink);
   font-weight: bold;
-  font-size: 36px;
-  line-height: 12px;
+  font-size: 64px;
+  line-height: 48px;
 }
 
 h2 {
   font-family: var(--secondary-font);
-  font-size: 24px;
+  font-size: 28px;
   line-height: 36px;
 }
 
@@ -47,12 +47,22 @@ ul .active {
   font-size: 18px;
 }
 
+.caps-p {
+  font-size: 28px;
+  font-family: var(--secondary-font);
+}
+
 .container-fluid {
     padding: 0;
 }
 
+.header-text-block {
+  top: 60%;
+  right: 0%;
+}
+
 .title-container {
-  width: 450px;
+  width: 500px;
 }
 
 .nav-tabs {
@@ -62,6 +72,7 @@ ul .active {
 .nav-link {
   padding: 10px 60px;
   color: var(--default-text-color);
+  font-family: var(--secondary-font);
   font-size: 24px;
 }
 
@@ -138,12 +149,26 @@ grid-auto-flow: dense;
   transform: rotateY(180deg);
 }
 
+.picture .back .dance-title {
+  font-family: var(--secondary-font);
+  font-size: 44px;
+}
+
+.picture .back a {
+  color: white;
+  text-decoration: none;
+}
+
+.picture .back a:hover {
+  color: var(--default-text-color);
+}
+
 .picture .back .flip-link {
   background-color: black;
   color: white;
   border-radius: 0;
-  padding: 5px 50px;
-  font-size: 24px;
+  padding: 5px 30px;
+  font-size: 16px;
   font-weight: 400;
   text-decoration: none;
 }
@@ -155,7 +180,7 @@ grid-auto-flow: dense;
 
 .picture .back .p-flips {
   font-size: 14px;
-  margin: 0 20px;
+  margin: 0 10px;
   color: white;
 }
 
